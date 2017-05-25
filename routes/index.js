@@ -11,7 +11,7 @@ api.post('/product', ProductCtrl.saveProduct)
 api.put('/product/:productid', ProductCtrl.updateProduct)
 api.delete('/product/:productid', ProductCtrl.deleteProduct)
 api.get('/private', auth.isAuth, (req, res) => {
-    res.status(200).send({ message: "Tienes Acceso" })
+  res.status(200).send({ message: 'Tienes Acceso' })
 })
 
 module.exports = api
